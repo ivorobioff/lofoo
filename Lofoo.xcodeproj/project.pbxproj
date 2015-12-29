@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF5E3721C31DAE30069364C /* AllStoresController.swift */; };
 		2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885741C316B53009C3C63 /* AppDelegate.swift */; };
 		2FF885771C316B53009C3C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885761C316B53009C3C63 /* ViewController.swift */; };
 		2FF8857A1C316B53009C3C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF885781C316B53009C3C63 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FF5E3721C31DAE30069364C /* AllStoresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllStoresController.swift; sourceTree = "<group>"; };
 		2FF885711C316B53009C3C63 /* Lofoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lofoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF885741C316B53009C3C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FF885761C316B53009C3C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2FF8857B1C316B53009C3C63 /* Assets.xcassets */,
 				2FF8857D1C316B53009C3C63 /* LaunchScreen.storyboard */,
 				2FF885801C316B53009C3C63 /* Info.plist */,
+				2FF5E3721C31DAE30069364C /* AllStoresController.swift */,
 			);
 			path = Lofoo;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF885771C316B53009C3C63 /* ViewController.swift in Sources */,
+				2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */,
 				2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +491,7 @@
 				2FF8859B1C316B53009C3C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FF8859C1C316B53009C3C63 /* Build configuration list for PBXNativeTarget "LofooTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				2FF8859E1C316B53009C3C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FF8859F1C316B53009C3C63 /* Build configuration list for PBXNativeTarget "LofooUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				2FF885A11C316B53009C3C63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
