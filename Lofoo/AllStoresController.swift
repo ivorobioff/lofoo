@@ -20,9 +20,14 @@ class AllStoresController: UITableViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addStore")
+        
+        self.navigationItem.rightBarButtonItem = addButton
+    }
+    
+    func addStore(){
+        performSegueWithIdentifier("toCreateStore", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
