@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F02C3391C347AAE004BDE41 /* CreateStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */; };
 		2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF5E3721C31DAE30069364C /* AllStoresController.swift */; };
 		2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885741C316B53009C3C63 /* AppDelegate.swift */; };
 		2FF885771C316B53009C3C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885761C316B53009C3C63 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStoreController.swift; sourceTree = "<group>"; };
 		2FF5E3721C31DAE30069364C /* AllStoresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllStoresController.swift; sourceTree = "<group>"; };
 		2FF885711C316B53009C3C63 /* Lofoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lofoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF885741C316B53009C3C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				2FF8857D1C316B53009C3C63 /* LaunchScreen.storyboard */,
 				2FF885801C316B53009C3C63 /* Info.plist */,
 				2FF5E3721C31DAE30069364C /* AllStoresController.swift */,
+				2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */,
 			);
 			path = Lofoo;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				2FF885771C316B53009C3C63 /* ViewController.swift in Sources */,
 				2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */,
 				2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */,
+				2F02C3391C347AAE004BDE41 /* CreateStoreController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

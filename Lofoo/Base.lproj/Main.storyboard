@@ -238,7 +238,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="All Stores" id="xyT-xf-ivc"/>
                     <connections>
-                        <segue destination="n7c-aa-A9I" kind="showDetail" identifier="toCreateStore" id="VXt-F0-aiW"/>
+                        <segue destination="n7c-aa-A9I" kind="presentation" identifier="toCreateStore" modalTransitionStyle="coverVertical" id="VXt-F0-aiW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODk-y4-B44" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,7 +249,7 @@
         <scene sceneID="h3K-Dp-Cen">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHj-y8-u10" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="n7c-aa-A9I" userLabel="Create Store" sceneMemberID="viewController">
+                <viewController id="n7c-aa-A9I" userLabel="Create Store" customClass="CreateStoreController" customModule="Lofoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eCT-Bt-37T"/>
                         <viewControllerLayoutGuide type="bottom" id="BpD-sS-qNM"/>
@@ -258,31 +258,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-wK-gXV" userLabel="Name TextField">
-                                <rect key="frame" x="90" y="30" width="490" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaY-6V-qWy">
-                                <rect key="frame" x="20" y="34" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-v8-Gh5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Vgq-Th-NRo"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Add Store" id="nj4-jb-8rr"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9gZ-wK-gXV" firstAttribute="leading" secondItem="YaY-6V-qWy" secondAttribute="trailing" constant="20" id="0Jl-bC-y37"/>
-                            <constraint firstItem="YaY-6V-qWy" firstAttribute="leading" secondItem="dXx-Ph-pQt" secondAttribute="leadingMargin" id="SOS-S1-1UE"/>
-                            <constraint firstItem="9gZ-wK-gXV" firstAttribute="top" secondItem="eCT-Bt-37T" secondAttribute="bottom" constant="10" id="XmZ-2n-Qwk"/>
-                            <constraint firstItem="9gZ-wK-gXV" firstAttribute="centerY" secondItem="YaY-6V-qWy" secondAttribute="centerY" id="mYC-oF-Zks"/>
-                            <constraint firstItem="YaY-6V-qWy" firstAttribute="top" secondItem="eCT-Bt-37T" secondAttribute="bottom" constant="14" id="z55-90-Jtt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9gZ-wK-gXV" secondAttribute="trailing" id="zsy-Po-Neu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c6u-v8-Gh5" secondAttribute="trailing" constant="-20" id="3Cf-tF-2Wc"/>
+                            <constraint firstItem="c6u-v8-Gh5" firstAttribute="top" secondItem="dXx-Ph-pQt" secondAttribute="topMargin" id="IwK-6T-Zbb"/>
+                            <constraint firstItem="c6u-v8-Gh5" firstAttribute="leading" secondItem="dXx-Ph-pQt" secondAttribute="leadingMargin" constant="-20" id="o4s-LR-OwH"/>
                         </constraints>
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="162" y="1023"/>
+            <point key="canvasLocation" x="162" y="986"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vfb-PI-0Ch">

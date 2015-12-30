@@ -15,6 +15,7 @@ class AllStoresController: UITableViewController {
         ["name": "Nr.1", "location": "28 Ion Creanga"]
     ]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,6 +58,10 @@ class AllStoresController: UITableViewController {
         return cell
     }
 
+    @IBAction func createDidCancel(segue: UIStoryboardSegue) {
+        
+    }
+    
     
     /*
     // Override to support conditional editing of the table view.
