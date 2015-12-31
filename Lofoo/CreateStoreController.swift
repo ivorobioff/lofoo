@@ -8,10 +8,15 @@
 
 import UIKit
 
-class CreateStoreController: UIViewController{
+class CreateStoreController: UIViewController, UIToolbarDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
+        
+        return UIBarPosition.TopAttached;
     }
 
     override func didReceiveMemoryWarning() {

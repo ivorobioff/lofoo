@@ -28,7 +28,20 @@ class AllStoresController: UITableViewController {
     }
     
     func addStore(){
-        performSegueWithIdentifier("toCreateStore", sender: self)
+        performSegueWithIdentifier("toCreateStoreScene", sender: self)
+    }
+    
+    @IBAction func cancelAddStore(sender: UIStoryboardSegue){
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        super.prepareForSegue(segue, sender: sender)
+        
+        if (segue.identifier != "toCreateStoreScene"){
+            return
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,10 +69,6 @@ class AllStoresController: UITableViewController {
         cell.detailTextLabel?.text = item["location"]
         
         return cell
-    }
-
-    @IBAction func createDidCancel(segue: UIStoryboardSegue) {
-        
     }
     
     
