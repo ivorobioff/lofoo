@@ -281,6 +281,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="8up-sh-cQx" secondAttribute="trailing" constant="-20" id="yYY-bE-1RM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="8up-sh-cQx" id="fs2-oN-dvp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9g-GV-z3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="W89-lN-Nm7" userLabel="Exit" sceneMemberID="exit"/>

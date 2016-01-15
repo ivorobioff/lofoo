@@ -10,13 +10,18 @@ import UIKit
 
 class CreateStoreController: UIViewController, UIToolbarDelegate{
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
-        
         return UIBarPosition.TopAttached;
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.navigationBar.sizeToFit()
     }
 
     override func didReceiveMemoryWarning() {
