@@ -16,6 +16,7 @@
 		2FF8857F1C316B53009C3C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF8857D1C316B53009C3C63 /* LaunchScreen.storyboard */; };
 		2FF8858A1C316B53009C3C63 /* LofooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885891C316B53009C3C63 /* LofooTests.swift */; };
 		2FF885951C316B53009C3C63 /* LofooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885941C316B53009C3C63 /* LofooUITests.swift */; };
+		2FF9D6EC1C4EE6930088152D /* StoreSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9D6EB1C4EE6930088152D /* StoreSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2FF885901C316B53009C3C63 /* LofooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LofooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF885941C316B53009C3C63 /* LofooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LofooUITests.swift; sourceTree = "<group>"; };
 		2FF885961C316B53009C3C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF9D6EB1C4EE6930088152D /* StoreSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				2FF885801C316B53009C3C63 /* Info.plist */,
 				2FF5E3721C31DAE30069364C /* AllStoresController.swift */,
 				2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */,
+				2FF9D6EB1C4EE6930088152D /* StoreSplitViewController.swift */,
 			);
 			path = Lofoo;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				2FF885771C316B53009C3C63 /* ViewController.swift in Sources */,
 				2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */,
 				2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */,
+				2FF9D6EC1C4EE6930088152D /* StoreSplitViewController.swift in Sources */,
 				2F02C3391C347AAE004BDE41 /* CreateStoreController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
