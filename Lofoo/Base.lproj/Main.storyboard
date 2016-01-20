@@ -312,7 +312,7 @@
         <!--Stores-->
         <scene sceneID="cB0-Aa-Q8c">
             <objects>
-                <splitViewController id="esc-us-XX0" customClass="StoreSplitViewController" customModule="Lofoo" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="esc-us-XX0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stores" id="FMR-RJ-3X4"/>
                     <connections>
                         <segue destination="pao-T1-2Di" kind="relationship" relationship="masterViewController" id="Ggp-IZ-xcZ"/>
