@@ -40,7 +40,16 @@ class AllStoresController: UITableViewController {
         self.performSegueWithIdentifier("toAddStore", sender: self)
     }
     
-    @IBAction func cancelAddStore(sender: UIStoryboardSegue){}
+    @IBAction func cancelAddStore(sender: UIStoryboardSegue){
+        
+        if (self.splitViewController!.displayMode != .AllVisible){
+            UIView.animateWithDuration(0.3) { () -> Void in
+                self.splitViewController!.preferredDisplayMode = .PrimaryOverlay
+            }
+            
+            self.splitViewController!.preferredDisplayMode = .Automatic
+        }
+    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
