@@ -29,13 +29,15 @@ class AllStoresController: UITableViewController {
     
     func addStore(){
         
-        UIView.animateWithDuration(0.2) { () -> Void in
-            self.splitViewController!.preferredDisplayMode = .PrimaryHidden
+        if (splitViewController!.displayMode == .PrimaryOverlay){
+            UIView.animateWithDuration(0.3) { () -> Void in
+                self.splitViewController!.preferredDisplayMode = .PrimaryHidden
+            }
+            
             self.splitViewController!.preferredDisplayMode = .Automatic
         }
         
         self.performSegueWithIdentifier("toAddStore", sender: self)
-        
     }
     
     @IBAction func cancelAddStore(sender: UIStoryboardSegue){}
