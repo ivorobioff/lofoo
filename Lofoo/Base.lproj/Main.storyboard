@@ -258,7 +258,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8up-sh-cQx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Add Store" id="B7w-3s-45A">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="JtD-eT-FOb">
@@ -273,13 +273,13 @@
                                     <outlet property="delegate" destination="N5F-vO-w5U" id="CqD-0j-VVE"/>
                                 </connections>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PT-8A-vRB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PT-8A-vRB" customClass="UIBorderView" customModule="Lofoo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="94" width="600" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTX-aw-gEd">
                                         <rect key="frame" x="8" y="9" width="63" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fidesco, Linella, Nr.1 and etc." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-lL-dei">
@@ -289,7 +289,7 @@
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="hvU-lL-dei" firstAttribute="centerY" secondItem="1PT-8A-vRB" secondAttribute="centerY" id="0aw-S2-NHf"/>
                                     <constraint firstItem="QTX-aw-gEd" firstAttribute="leading" secondItem="1PT-8A-vRB" secondAttribute="leading" constant="8" id="1eQ-Tr-nEV"/>
@@ -299,13 +299,13 @@
                                     <constraint firstItem="QTX-aw-gEd" firstAttribute="centerY" secondItem="1PT-8A-vRB" secondAttribute="centerY" id="lty-Aj-S03"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufv-ls-Trx">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufv-ls-Trx" customClass="UIBorderView" customModule="Lofoo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="134" width="600" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxV-oR-ze4">
                                         <rect key="frame" x="8" y="9.5" width="63" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="755 Ion Creanga" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrT-47-Mu5">
@@ -323,9 +323,17 @@
                                     <constraint firstItem="nxV-oR-ze4" firstAttribute="leading" secondItem="ufv-ls-Trx" secondAttribute="leading" constant="8" id="kc1-ni-Ejh"/>
                                     <constraint firstAttribute="trailing" secondItem="WrT-47-Mu5" secondAttribute="trailing" constant="8" id="unE-fd-Ah0"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topBorderWeight">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topBorderColor">
+                                        <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8up-sh-cQx" secondAttribute="trailing" id="56b-S1-SGH"/>
                             <constraint firstItem="ufv-ls-Trx" firstAttribute="top" secondItem="1PT-8A-vRB" secondAttribute="bottom" id="9xy-mj-YuR"/>
