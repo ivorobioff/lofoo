@@ -258,6 +258,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8up-sh-cQx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <items>
                                     <navigationItem title="Add Store" id="B7w-3s-45A">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="JtD-eT-FOb">
@@ -273,7 +274,7 @@
                                 </connections>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8up-sh-cQx" secondAttribute="trailing" id="56b-S1-SGH"/>
                             <constraint firstItem="8up-sh-cQx" firstAttribute="leading" secondItem="9ha-wp-wxj" secondAttribute="leading" id="mYY-gi-Z0C"/>
