@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F02C3391C347AAE004BDE41 /* CreateStoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */; };
 		2F183B6C1C5426E200EC2BF3 /* UIBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F183B6B1C5426E200EC2BF3 /* UIBorderView.swift */; };
+		2F63F4FB1C55692B003741D1 /* UITextFieldHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F63F4FA1C55692B003741D1 /* UITextFieldHolder.swift */; };
 		2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF5E3721C31DAE30069364C /* AllStoresController.swift */; };
 		2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885741C316B53009C3C63 /* AppDelegate.swift */; };
 		2FF885771C316B53009C3C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF885761C316B53009C3C63 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStoreController.swift; sourceTree = "<group>"; };
 		2F183B6B1C5426E200EC2BF3 /* UIBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBorderView.swift; sourceTree = "<group>"; };
+		2F63F4FA1C55692B003741D1 /* UITextFieldHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldHolder.swift; sourceTree = "<group>"; };
 		2FF5E3721C31DAE30069364C /* AllStoresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllStoresController.swift; sourceTree = "<group>"; };
 		2FF885711C316B53009C3C63 /* Lofoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lofoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF885741C316B53009C3C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				2FF5E3721C31DAE30069364C /* AllStoresController.swift */,
 				2F02C3381C347AAE004BDE41 /* CreateStoreController.swift */,
 				2F183B6B1C5426E200EC2BF3 /* UIBorderView.swift */,
+				2F63F4FA1C55692B003741D1 /* UITextFieldHolder.swift */,
 			);
 			path = Lofoo;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				2FF885771C316B53009C3C63 /* ViewController.swift in Sources */,
 				2FF5E3731C31DAE30069364C /* AllStoresController.swift in Sources */,
 				2F183B6C1C5426E200EC2BF3 /* UIBorderView.swift in Sources */,
+				2F63F4FB1C55692B003741D1 /* UITextFieldHolder.swift in Sources */,
 				2FF885751C316B53009C3C63 /* AppDelegate.swift in Sources */,
 				2F02C3391C347AAE004BDE41 /* CreateStoreController.swift in Sources */,
 			);

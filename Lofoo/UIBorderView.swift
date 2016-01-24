@@ -10,25 +10,25 @@ class UIBorderView: UIView {
     
     @IBInspectable var topBorderWeight: Int = 0 {
         didSet {
-            adjustTopLayer(topBorderWeight)
+            adjustTopLayer(layer, withBorderWeight: topBorderWeight)
         }
     }
     
     @IBInspectable var rightBorderWeight: Int = 0 {
         didSet {
-            adjustRightLayer(rightBorderWeight)
+            adjustRightLayer(layer, withBorderWeight: rightBorderWeight)
         }
     }
     
     @IBInspectable var leftBorderWeight: Int = 0 {
         didSet {
-            adjustLeftLayer(leftBorderWeight)
+            adjustLeftLayer(layer, withBorderWeight: leftBorderWeight)
         }
     }
     
     @IBInspectable var bottomBorderWeight: Int = 0 {
         didSet {
-            adjustBottomLayer(bottomBorderWeight)
+            adjustBottomLayer(layer, withBorderWeight: bottomBorderWeight)
         }
     }
     
@@ -98,7 +98,7 @@ class UIBorderView: UIView {
     }()
     
     
-    private func adjustTopLayer(withBorderWeight: Int) {
+    private func adjustTopLayer(layer: CALayer, withBorderWeight: Int) {
         let x: CGFloat = 0
         let y: CGFloat = 0
         let width = layer.frame.width
@@ -107,7 +107,7 @@ class UIBorderView: UIView {
         topLayer.frame = CGRectMake(x, y, width, height)
     }
     
-    private func adjustLeftLayer(withBorderWeight: Int){
+    private func adjustLeftLayer(layer: CALayer, withBorderWeight: Int){
         let x: CGFloat = 0
         let y: CGFloat = 0
         let width = CGFloat(withBorderWeight)
@@ -116,7 +116,7 @@ class UIBorderView: UIView {
         leftLayer.frame = CGRectMake(x, y, width, height)
     }
     
-    private func adjustRightLayer(withBorderWeight: Int){
+    private func adjustRightLayer(layer: CALayer, withBorderWeight: Int){
         let x: CGFloat = layer.frame.width - CGFloat(withBorderWeight)
         let y: CGFloat = 0
         let width = CGFloat(withBorderWeight)
@@ -125,7 +125,7 @@ class UIBorderView: UIView {
         rightLayer.frame = CGRectMake(x, y, width, height)
     }
     
-    private func adjustBottomLayer(withBorderWeight: Int){
+    private func adjustBottomLayer(layer: CALayer, withBorderWeight: Int){
         let x: CGFloat = 0
         let y = layer.frame.height - CGFloat(withBorderWeight)
         let width = layer.frame.width
@@ -134,10 +134,12 @@ class UIBorderView: UIView {
         bottomLayer.frame = CGRectMake(x, y, width, height)
     }
     
-    override func drawRect(rect: CGRect) {
-        adjustTopLayer(topBorderWeight)
-        adjustBottomLayer(bottomBorderWeight)
-        adjustLeftLayer(leftBorderWeight)
-        adjustRightLayer(rightBorderWeight)
+    override func layoutSublayersOfLayer(layer: CALayer) {
+        super.layoutSublayersOfLayer(layer)
+        
+        adjustTopLayer(layer, withBorderWeight: topBorderWeight)
+        adjustBottomLayer(layer, withBorderWeight: bottomBorderWeight)
+        adjustLeftLayer(layer, withBorderWeight: leftBorderWeight)
+        adjustRightLayer(layer, withBorderWeight: rightBorderWeight)
     }
 }
